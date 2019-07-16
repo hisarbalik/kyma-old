@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Values",
+  "type": "object",
+  "properties": {
+    "serviceAccount": {
+      "type": "object",
+      "description": "some desc.",
+      "test": {
+        "description": "Container Image",
+        "type": "string",
+        "minLength": 2,
+        "maxLength": 3
+      },
+      "create": {
+        "description": "Container Image",
+        "type": "boolean",
+        "default": "true"
+      },
+      "required": [
+        "test"
+      ]
+    }
+  }
+}
